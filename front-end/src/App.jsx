@@ -3,24 +3,18 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
+import MovieCard from './componets/MovieCard'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    //fragment 
     <>
-      <Text display= "This is like a perameter"/>
-      <Text display="Hello, there"/>
+      <MovieCard movie={{title: "Osvaldo Moviw", release_date: "2024"}}/>
     </>
   )
 }
 
-function Text({display}){
-  return(
-    <div>
-      <p>{display}</p>
-    </div>
-      
-  ); 
-}
+
 export default App
