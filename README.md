@@ -10,3 +10,4 @@ to run a react application
 ```
 npm run dev
 ```
+min 48
