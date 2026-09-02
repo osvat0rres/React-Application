@@ -6,14 +6,18 @@ import './App.css'
 import MovieCard from './componets/MovieCard'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const movienUmber1 = 1;
 
   return (
     //fragment 
     <>
-      <MovieCard movie={{title: "Osvaldo Moviw", release_date: "2024"}}/>
+  
+      <MovieCard movie={{title: "Osvaldo Movie", release_date: "2024"}}/>
+
+      <MovieCard movie={{title: "Aron", release_date: "2020"}}/>
+    
     </>
-  )
+  ) 
 }
 
 
