@@ -2,4 +2,11 @@
 This will be a simple react application
 Currently working...
 
-min 29.09
+to install npm
+```
+install npm
+```
+to run a react application 
+```
+npm run dev
+```
