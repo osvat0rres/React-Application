@@ -10,4 +10,7 @@ to run a react application
 ```
 npm run dev
 ```
-min 48
+to install the react router
+```
+ npm install react-router-dom
+```
