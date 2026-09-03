@@ -1,31 +1,22 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './css/App.css';
-import MovieCard from './componets/MovieCard'
-import Home from './pages/home'
-import { Routes, Route } from 'react-router-dom'
-import Favorites from './pages/favorites'; 
-import NavBar from './componets/NavBar';
-
-
+import "./css/App.css";
+import Favorites from "./pages/Favorites";
+import Home from "./pages/Home";
+import { Routes, Route } from "react-router-dom";
+import { MovieProvider } from "./contexts/MovieContext";
+import NavBar from "./components/NavBar";
 
 function App() {
-
   return (
-    <div>
+    <MovieProvider>
       <NavBar />
-
-      <main className='main-content'>
+      <main className="main-content">
         <Routes>
-          <Route path='/' element={<Home />}/>
-          <Route path='/favorites' element={<Favorites/>}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/favorites" element={<Favorites />} />
         </Routes>
       </main>
-    </div>
-  ); 
+    </MovieProvider>
+  );
 }
 
- 
-export default App
+export default App;
